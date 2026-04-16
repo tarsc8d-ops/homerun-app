@@ -8,7 +8,7 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
   const [isDemo, setIsDemo] = useState(false)
-  const [userRole, setUserRole] = useState('homeowner')
+  const [userRole, setUserRole] = useState('homeowner') // 'homeowner' | 'pro'
 
   useEffect(() => {
     if (isSupabaseConfigured()) {
